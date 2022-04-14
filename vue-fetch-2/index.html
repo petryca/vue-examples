@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello World</title>
+    <script src="https://unpkg.com/vue@3"></script>
+</head>
+<body>
+
+    <div id="app">
+
+        <button v-on:click="runFetch">Fetch</button>
+
+        <ul>
+            <li v-for="user in users">{{ user.name }}</li>
+        </ul>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
